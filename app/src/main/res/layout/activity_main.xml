@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学习总结"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textColor="#323232"/>
+
+    <Button
+        android:id="@+id/enter_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="View基础知识"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/enter_custom_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="自定义View"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/enter_ipc"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="IPC机制"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/enter_network"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="网络编程"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/enter_thread"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="并发线程"
+        android:textSize="14sp"/>
+
+</LinearLayout>

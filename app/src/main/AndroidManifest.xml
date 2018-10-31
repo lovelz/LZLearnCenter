@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lovelz.lzlearncenter">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--view相关-->
+        <activity android:name=".view.ViewActivity"/>
+        <activity android:name=".view.CustomViewActivity"/>
+
+        <!--IPC相关-->
+        <activity android:name=".ipc.IPCSimulateActivity"/>
+        <activity android:name=".ipc.messenger.MessengerActivity"/>
+        <activity android:name=".ipc.aidl.AIDLActivity"/>
+        <activity android:name=".ipc.provider.ContentProviderActivity"/>
+        <activity android:name=".ipc.socket.SocketClientActivity"/>
+        <activity android:name=".ipc.handler.HandlerThreadActivity"/>
+
+        <service
+            android:name=".ipc.IPCSimulateService"
+            android:label="@string/app_name"
+            android:process=":remote"/>
+
+        <service
+            android:name=".ipc.messenger.MessengerService"
+            android:process=":remote"/>
+
+        <service android:name=".ipc.aidl.AIDLService"
+            android:label="@string/app_name"
+            android:process=":remote"/>
+
+        <service android:name=".ipc.socket.SocketServerService"
+            android:label="@string/app_name"
+            android:process=":remote"/>
+
+        <provider
+            android:authorities="com.lovelz.lzlearncenter.ipc.provider.GameProvider"
+            android:name=".ipc.provider.GameProvider"
+            android:process=":provider"
+            android:exported="true"/>
+
+        <!--http相关-->
+        <activity android:name=".http.HttpActivity"/>
+        <activity android:name=".http.connect.HttpURLConnectionActivity"/>
+        <activity android:name=".http.volley.VolleyActivity"/>
+        <activity android:name=".http.okhttp.OkHttpActivity"/>
+
+
+        <!--线程相关-->
+        <activity android:name=".thread.ThreadPracticeActivity"/>
+        <activity android:name=".thread.know.ThreadKnowActivity"/>
+        <activity android:name=".thread.synchronization.ThreadSynchronizationActivity"/>
+
+    </application>
+
+</manifest>
