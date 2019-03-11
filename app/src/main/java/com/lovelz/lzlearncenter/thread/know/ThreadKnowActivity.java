@@ -1,8 +1,6 @@
 package com.lovelz.lzlearncenter.thread.know;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.lovelz.lzlearncenter.R;
@@ -11,6 +9,8 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  *
@@ -37,7 +37,7 @@ public class ThreadKnowActivity extends AppCompatActivity {
     private static final String TAG = ThreadKnowActivity.class.getSimpleName();
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_thread_know);

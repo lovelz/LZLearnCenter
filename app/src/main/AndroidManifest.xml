@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.lovelz.lzlearncenter">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -9,13 +10,14 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
-        android:name=".MyApplication"
+        android:name=".SophixStubApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -70,6 +72,35 @@
         <activity android:name=".thread.ThreadPracticeActivity"/>
         <activity android:name=".thread.know.ThreadKnowActivity"/>
         <activity android:name=".thread.synchronization.ThreadSynchronizationActivity"/>
+
+        <!--内存优化相关-->
+        <activity android:name=".memory.MemoryOptimizeActivity"/>
+        <activity android:name=".memory.data.DataTypeActivity"/>
+        <activity android:name=".memory.design.MemoryDesignActivity"/>
+
+        <!--注解-->
+        <activity android:name=".annotate.GameFlavourActivity"/>
+
+        <!--依赖注释相关-->
+        <activity android:name=".di.DiTestActivity"/>
+        <activity android:name=".di.simple.SimpleStudentActivity"/>
+        <activity android:name=".di.provider.ProviderActivity"/>
+
+        <!--RecyclerView新知识相关-->
+        <activity android:name=".recyclerview.AdvancedRecyclerViewActivity"/>
+
+        <!--设计模式-->
+        <activity android:name=".design.DesignActivity"/>
+
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="25256067" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="041e2307c1899a1552375c164b222552" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCq2ymZwaM+8PuiSxkH6W8tulolwLi/zB6IW6Rt3D1BeBWi6wQN1AZlCh385wmHkC1LaHiYAP6QunCaUfuRNwuUgdR19aYI2PiX5CR5txNZ3MJb3lSZawyNJ3aahtoPQQPAiPgCfMdyJyjxdHmp4DMEY5zmhZPCgY71JYTWhTx6cCY9y3NsLlEVrTrgEXCoBnZC/bECtbYq1j1Zk1GYq82EdB2GCpicgn8NaW0lt4RLTRBmA9K4to9V8KBbQLjMk+75qS9uyLEjtIb8Aex9JKNI09DbXfX4LWir7gpfTKFvGaCCCTugiCzedDNhuSBh8ayDiOXadwiL77OI+M5nuwsVAgMBAAECggEAA+vDqKOo+2jMXY0bpfLVelcsenFRzBUDHl38CAll3nrDBFogXbDf9LGmvocO0O2eHHzpR5O+Q9QDgYcgHtUEjwPrvElG5i0Uh2fU7nYlG4rVawZPKrYqM5MURbeSiYcUbva1uljiutvrNJ9Xq25ZvWAL2b53BZ+ziCy0P7gPC0A96auYirsQ0DXFCBiqKT/mlHDJ7kbIkYFlR0BplSZVJ9MDzxzNAwRa66d21CXirg0CGD9H3JqON6XwlF9BGpb35BFwWAWm95vA8YZR2PzANCqGWegLjYOz50UsJph/UzzakoEb/TUJFHW6urmv4EFyLGFAt/Iy9ebItE/w34regQKBgQD0EhRtHJZ5oba75JMVBsyVB3Bj0CE9fw+56KRWuC6SUuqzO7yjSr2IDfzRR/ISN6N2j9dZJ6vVwNcPqefUB7qHYb6XfzUvEHgAN/aNIyKatLIxtrFk6Kyv+RtI8npTyraFAFE60mQStnqB3yiJEcQqgGyQHkqtAlUbabmNURznMwKBgQCzNP105MQsrsHb8P35QuruHFccVdzWlErOOX8trMJJH84+WoqIagwf2OQEGj7WLDnqpOsYOXtEGdbNk2sGf2PgRKBPhFfD5zLmjFcNxHWTUPGImg2uElpaPCwLrWRb/C+8S/xYPaBPAgzlLWM2TTq2IHwl3xS2wSMAcjN6XiaklwKBgGidk0nNliYejc/twqmhl3FNlfwCiyzr2JbMRByzp6qqhdU7hrjLYX/+1t3xo63xUUyRjTG20m210bjyD9+PTIGZAPO439gDjBwz4KdQZxW+3B54+4KQROzMrshOvuZJnoBVyXuYELMAqnQebiaKifXZxC7l/QY5WLd+Ur1jBiuHAoGAKD+LeThz8tEhCwO6FsR3vRiyW9PQ8ISHtH9nV9vIGuJA0PJG0NJ4fKKau20llbaDH3cAsgUe8TGYc71bOS9dQB5JnvJLP91qKit01cu82GRCivqGfgTzM/b1sX2034/pLLIoL61Pls8QFFy4Ppbjy8nJ+Dt9DHqeINiFRUNmDGsCgYA/kUggbtxBpXHYThdesIEITWis6ho6El2ctrbPbTUY/Q2UevREZVbIdC9V7M73CwsjXEBsBmaiLFU/lHm+E1gFjMuj0gGksqC4YCxYdVKaAR60FlmGiafIb2uwwCuFwfqPQVq6j4eAlPiIC22d5mYPPYsQI35JKVaaFiKjcrIDKQ=="/>
 
     </application>
 

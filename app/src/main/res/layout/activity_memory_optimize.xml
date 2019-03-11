@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/enter_data_type"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="数据类型"/>
+
+    <Button
+        android:id="@+id/enter_memory_design"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="内存设计"/>
+
+</LinearLayout>

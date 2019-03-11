@@ -1,10 +1,11 @@
 package com.lovelz.lzlearncenter.view;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+
+import androidx.annotation.Nullable;
 
 /**
  * 点击事件的相关优先级

@@ -3,8 +3,6 @@ package com.lovelz.lzlearncenter.ipc.socket;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
@@ -20,6 +18,8 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.Socket;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 /**
  * @author lovelz
  * @date on 2018/10/15.
@@ -31,7 +31,7 @@ public class SocketClientActivity extends AppCompatActivity implements View.OnCl
     private EditText sendInfo;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_socket_client);
 

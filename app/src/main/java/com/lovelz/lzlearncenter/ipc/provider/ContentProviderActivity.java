@@ -4,11 +4,11 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.lovelz.lzlearncenter.R;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * @author lovelz
@@ -19,7 +19,7 @@ public class ContentProviderActivity extends AppCompatActivity {
     private static final String TAG = ContentProviderActivity.class.getSimpleName();
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_content_provider);
 

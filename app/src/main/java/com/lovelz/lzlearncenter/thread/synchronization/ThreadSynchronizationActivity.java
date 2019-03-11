@@ -1,10 +1,10 @@
 package com.lovelz.lzlearncenter.thread.synchronization;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 
 import com.lovelz.lzlearncenter.R;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * 线程同步
@@ -18,7 +18,7 @@ import com.lovelz.lzlearncenter.R;
 public class ThreadSynchronizationActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_thread_synchronization);

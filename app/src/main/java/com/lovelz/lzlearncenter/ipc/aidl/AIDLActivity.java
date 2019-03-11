@@ -6,13 +6,13 @@ import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.RemoteException;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.lovelz.lzlearncenter.Game;
 import com.lovelz.lzlearncenter.IGameManager;
 import com.lovelz.lzlearncenter.R;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * @author lovelz
@@ -23,7 +23,7 @@ public class AIDLActivity extends AppCompatActivity {
     private static final String TAG = AIDLActivity.class.getSimpleName();
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aidl);
 

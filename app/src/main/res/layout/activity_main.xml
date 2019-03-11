@@ -48,4 +48,39 @@
         android:text="并发线程"
         android:textSize="14sp"/>
 
+    <Button
+        android:id="@+id/enter_memory_optimize"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="内存优化"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/enter_annotate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="注解"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/enter_di"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="依赖注入"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/enter_advanced_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="RecyclerVew升级"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/enter_design"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="设计模式"
+        android:textSize="14sp"/>
+
 </LinearLayout>

@@ -2,13 +2,13 @@ package com.lovelz.lzlearncenter.thread;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.lovelz.lzlearncenter.R;
 import com.lovelz.lzlearncenter.thread.know.ThreadKnowActivity;
 import com.lovelz.lzlearncenter.thread.synchronization.ThreadSynchronizationActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * @author lovelz
@@ -17,7 +17,7 @@ import com.lovelz.lzlearncenter.thread.synchronization.ThreadSynchronizationActi
 public class ThreadPracticeActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thread_practice);
 

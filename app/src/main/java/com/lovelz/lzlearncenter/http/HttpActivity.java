@@ -2,14 +2,14 @@ package com.lovelz.lzlearncenter.http;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.lovelz.lzlearncenter.R;
 import com.lovelz.lzlearncenter.http.connect.HttpURLConnectionActivity;
 import com.lovelz.lzlearncenter.http.okhttp.OkHttpActivity;
 import com.lovelz.lzlearncenter.http.volley.VolleyActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * @author lovelz
@@ -18,7 +18,7 @@ import com.lovelz.lzlearncenter.http.volley.VolleyActivity;
 public class HttpActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_http);
 

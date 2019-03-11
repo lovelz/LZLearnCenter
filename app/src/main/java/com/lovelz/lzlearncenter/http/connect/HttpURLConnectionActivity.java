@@ -1,9 +1,6 @@
 package com.lovelz.lzlearncenter.http.connect;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.lovelz.lzlearncenter.R;
@@ -16,6 +13,9 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 /**
  * @author lovelz
  * @date on 2018/10/19.
@@ -25,7 +25,7 @@ public class HttpURLConnectionActivity extends AppCompatActivity {
     private static final String TAG = HttpURLConnectionActivity.class.getSimpleName();
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_http_url_connection);
 
